@@ -1,0 +1,21 @@
+ #include <stdio.h>
+ int main() {
+   int i,N;
+   scanf("%d", &N);
+   int sales[N];
+   for(i = 0; i < N; i++) {  
+     scanf("%d", &sales[i]);
+   }
+     char result[] = "Yes";
+     for( i = 0; i < N - 1; i++) {  
+       if(sales[i] > sales[i+1]) {
+         result[0] = 'N';
+         result[1] = 'o';
+         result[2] = '0';
+         break;
+        }
+    }
+    printf("%s\n", result);
+    return 0;
+}
+ 
