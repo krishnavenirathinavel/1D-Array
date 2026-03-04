@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+  int n,i,j;
+  scanf("%d",&n);
+  int arr[n];
+  for(i = 0;i < n;i++){
+    scanf("%d",&arr[i]);
+  }
+  for(i = 0; i < n;i++){
+    int isduplicate = 0;
+    for( j = 0;j < i;j++){
+    if(arr[i]==arr[j]){
+      isduplicate= 1;
+      int isduplicate = 0;
+      break;
+    }
+  }
+  if(!isduplicate){
+    printf("%d",arr[i]);
+  }
+}
+ return 0;
+}
