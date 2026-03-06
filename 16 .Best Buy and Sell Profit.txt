@@ -1,0 +1,19 @@
+ #include <stdio.h>
+ int main() {
+   int n, price;
+   int minPrice, maxProfit;
+   scanf("%d", &n);
+   scanf("%d", &minPrice);   
+   maxProfit = -1000000;  
+   for(int i = 1; i < n; i++) {
+     scanf("%d", &price);
+     int profit = price - minPrice;
+     if(profit > maxProfit)
+     maxProfit = profit;
+     if(price < minPrice)
+     minPrice = price;
+    }
+    printf("%d", maxProfit);
+    return 0;
+}
+ 
